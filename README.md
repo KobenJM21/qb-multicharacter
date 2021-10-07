@@ -14,7 +14,9 @@ https://drive.google.com/drive/folders/1o9lNYIHxqYJHS9VNz2Wt_wDSkx4Ed9LI?usp=sha
 - Station
 - qb-spawn
 
+## Video
+https://streamable.com/45b1j9
 
-## Screenshots
+## Screenshot
 ![General](https://i.imgur.com/gmNCQuF.png)
 
