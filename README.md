@@ -21,3 +21,5 @@ https://streamable.com/45b1j9
 ## Screenshot
 ![General](https://i.imgur.com/gmNCQuF.png)
 
+## CFG (reference for loading)
+![CFG](https://i.imgur.com/m7X0TIu.png)
