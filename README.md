@@ -13,7 +13,7 @@ https://drive.google.com/drive/folders/1o9lNYIHxqYJHS9VNz2Wt_wDSkx4Ed9LI?usp=sha
 - Peds
 - Station
 - qb-spawn
-- textUi
+- textUi (not needed)
 
 ## Video
 https://streamable.com/45b1j9
