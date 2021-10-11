@@ -27,7 +27,6 @@ local function GiveStarterItems(source)
             info.phone = Player.PlayerData.charinfo.phone
         end
         Player.Functions.AddItem(v.item, v.amount, false, info)
-        -- TriggerClientEvent('inventory:client:ItemBox',src,QBCore.Shared.Items[v.item],'add', v.amount) 
     end
 end
 
@@ -157,11 +156,7 @@ end)
 QBCore.Functions.CreateCallback("qb-multicharacter:server:getSkin", function(source, cb, cid)
     local result = exports.oxmysql:fetchSync('SELECT * FROM playerskins WHERE citizenid = ? AND active = ?', {cid, 1})
     if result[1] ~= nil then
-        cb(result[1].model, result[1].skin, result[1].tattoos) 
-        -- print("MODEL: "..result[1].model)
-        -- print("SKIN: "..result[1].skin)
-        -- print("TATTOOS: "..result[1].tattoos)
-
+        cb(result[1].model, result[1].skin)
     else
         cb(nil)
     end
