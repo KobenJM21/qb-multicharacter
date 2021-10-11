@@ -75,7 +75,7 @@ end)
 
 
 local function DisableHudIcons()
-    exports['textUi']:DrawTextUi('hide')   
+    --exports['textUi']:DrawTextUi('hide')   
     TriggerEvent('qb-hud:client:ToggleBugMode', false)
     TriggerEvent('qb-hud:client:ToggleDevMode', false) 
     TriggerEvent('qb-hud:client:ToggleWeaponMode', false) 
@@ -83,7 +83,7 @@ local function DisableHudIcons()
 end
 
 RegisterNetEvent('qb-multicharacter:client:chooseChar', function()
-    DisableHudIcons() 
+   DisableHudIcons() 
     SetNuiFocus(false, false)
     DoScreenFadeOut(10)
     Citizen.Wait(1000)
