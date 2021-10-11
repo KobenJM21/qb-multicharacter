@@ -20,14 +20,13 @@ end)
 
 
 local function skyCam(bool)
-    TriggerEvent('qb-weathersync:client:EnableSync')
-
+    TriggerEvent('qb-weathersync:client:DisableSync')
     if bool then
         DoScreenFadeIn(1000)
         SetTimecycleModifier('hud_def_blur')
         SetTimecycleModifierStrength(1.0)
         FreezeEntityPosition(PlayerPedId(), false)
-        cam = CreateCamWithParams("DEFAULT_SCRIPTED_CAMERA", -3963.967, 2014.232, 500.912, 0.0 ,0.0, -110.0, 65.00, false, 0)
+        cam = CreateCamWithParams("DEFAULT_SCRIPTED_CAMERA", Config.CamCoords.x, Config.CamCoords.y, Config.CamCoords.z, 0.0 ,0.0, Config.CamCoords.w, 60.00, false, 0)
         SetCamActive(cam, true)
         RenderScriptCams(true, false, 1, true, true)
     else
@@ -137,10 +136,7 @@ RegisterNUICallback('cDataPed', function(data)
                     while not HasModelLoaded(model) do
                         Citizen.Wait(0)
                     end
-
-                    
                     charPed = CreatePed(2, model, Config.PedCoords.x, Config.PedCoords.y, Config.PedCoords.z - 0.98, Config.PedCoords.w, false, true)
-
                     local  RandomAnimins = {     
                         "WORLD_HUMAN_HANG_OUT_STREET",
                         "WORLD_HUMAN_STAND_IMPATIENT",
@@ -163,8 +159,10 @@ RegisterNUICallback('cDataPed', function(data)
             else
                 Citizen.CreateThread(function()
                     local randommodels = {
-                        "np_m_character_select",
-                        "np_f_character_select",
+                        "mp_m_freemode_01",
+                        "mp_f_freemode_01",
+                        -- "np_m_character_select",
+                        -- "np_f_character_select",
                     }
                     local model = GetHashKey(randommodels[math.random(1, #randommodels)])
                     RequestModel(model)
@@ -183,8 +181,10 @@ RegisterNUICallback('cDataPed', function(data)
     else
         Citizen.CreateThread(function()
             local randommodels = {
-                "np_m_character_select",
-                "np_f_character_select",
+                "mp_m_freemode_01",
+                "mp_f_freemode_01",
+                -- "np_m_character_select",
+                -- "np_f_character_select",
             }
             local model = GetHashKey(randommodels[math.random(1, #randommodels)])
             RequestModel(model)
