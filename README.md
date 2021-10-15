@@ -12,7 +12,7 @@ https://drive.google.com/drive/folders/1o9lNYIHxqYJHS9VNz2Wt_wDSkx4Ed9LI?usp=sha
 [Google Drive Download Includes] 
 - Peds
 - Station
-- textUi (not needed)
+- textUi: https://github.com/dojwun/textUi
 
 ## Optinal 
 - qb-spawn
