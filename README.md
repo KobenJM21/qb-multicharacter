@@ -6,25 +6,16 @@ All Credits to go to the original qbcore-framework repository
 
 
 ## Required
+**[spawnstation & peds](https://drive.google.com/drive/folders/1o9lNYIHxqYJHS9VNz2Wt_wDSkx4Ed9LI?usp=sharing)**
 
-https://drive.google.com/drive/folders/1o9lNYIHxqYJHS9VNz2Wt_wDSkx4Ed9LI?usp=sharing
+**[textUi](https://github.com/dojwun/textUi)**
 
-[Google Drive Download Includes] 
-- Peds
-- Station
-- textUi: https://github.com/dojwun/textUi
 
 ## Optinal 
-- qb-spawn
+**[edited qb-spawn](https://github.com/dojwun/qb-spawn)**
 
-https://github.com/dojwun/qb-spawn
+## Showcase
+**[Video](https://streamable.com/45b1j9)**
 
+![qb-multi](https://i.imgur.com/gmNCQuF.png)
 
-## Video
-https://streamable.com/45b1j9
-
-## Screenshot
-![General](https://i.imgur.com/gmNCQuF.png)
-
-## CFG (reference for loading)
-![CFG](https://i.imgur.com/m7X0TIu.png)
