@@ -16,8 +16,11 @@ files {
     'html/reset.css',
     'html/script.js',
     'html/logo.png',
-    'html/images/*.png', 
+    'html/images/*.png',
+    'addons/peds.meta'
 }
+
+data_file 'PED_METADATA_FILE' 'addons/peds.meta'
 
 dependencies {
     'qb-core',
