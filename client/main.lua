@@ -86,17 +86,25 @@ local function DisableHudIcons()
 end
 
 RegisterNetEvent('qb-multicharacter:client:chooseChar', function()
+    local ped = PlayerPedId()
     DisableHudIcons() 
     SetNuiFocus(false, false)
     DoScreenFadeOut(10)
+    SetEntityCoords(ped, Config.HiddenCoords.x, Config.HiddenCoords.y, Config.HiddenCoords.z)
+    FreezeEntityPosition(ped, true)
     Wait(1000)
-    local interior = GetInteriorAtCoords(Config.Interior.x, Config.Interior.y, Config.Interior.z - 18.9)
-    LoadInterior(interior)
-    while not IsInteriorReady(interior) do
-        Wait(1000)
+    while not HasCollisionLoadedAroundEntity(ped) do
+        Wait(0)
+        print("HasCollisionLoadedAroundEntity")
     end
-    FreezeEntityPosition(PlayerPedId(), true)
-    SetEntityCoords(PlayerPedId(), Config.HiddenCoords.x, Config.HiddenCoords.y, Config.HiddenCoords.z)
+    while not HasCollisionForModelLoaded(GetHashKey("sp_01_station")) do
+        Wait(0)
+        print("HasCollisionForModelLoaded")
+    end
+    while not HasModelLoaded(GetHashKey("sp_01_station")) do
+        Wait(100)
+        print("HasModelLoaded")
+    end
     Wait(1500)
     ShutdownLoadingScreen() 
     ShutdownLoadingScreenNui()
