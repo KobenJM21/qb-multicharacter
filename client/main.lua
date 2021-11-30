@@ -95,15 +95,12 @@ RegisterNetEvent('qb-multicharacter:client:chooseChar', function()
     Wait(1000)
     while not HasCollisionLoadedAroundEntity(ped) do
         Wait(0)
-        print("HasCollisionLoadedAroundEntity")
     end
     while not HasCollisionForModelLoaded(GetHashKey("sp_01_station")) do
         Wait(0)
-        print("HasCollisionForModelLoaded")
     end
     while not HasModelLoaded(GetHashKey("sp_01_station")) do
         Wait(100)
-        print("HasModelLoaded")
     end
     Wait(1500)
     ShutdownLoadingScreen() 
