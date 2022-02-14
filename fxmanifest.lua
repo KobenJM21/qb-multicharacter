@@ -6,7 +6,10 @@ version '1.0.0'
 
 shared_script 'config.lua'
 client_script 'client/main.lua'
-server_script 'server/main.lua'
+server_script {
+    'server/main.lua',
+    '@oxmysql/lib/MySQL.lua'
+}
 
 ui_page 'html/index.html'
 
