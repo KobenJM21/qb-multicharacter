@@ -1,6 +1,5 @@
-## Fix (Screenshot)
-**Make sure server.cfg is set up like this
-**(example)
+## Fix (Make ssure server.cfg is setup like this)
+
 ![server.cfg](https://i.imgur.com/OxIK2Sp.png)
 
 
