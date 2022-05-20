@@ -2,15 +2,15 @@
 Make sure server.cfg is set up like this
 (example)
 
-ensure qb-core
-start multi-spawn
-start qb-multicharacter
-ensure [qb]
-ensure [standalone]
-ensure [voice]
-ensure [defaultmaps]
-ensure [maps]
-ensure [weaponmods]
+**ensure qb-core
+**start multi-spawn
+**start qb-multicharacter
+**ensure [qb]
+**ensure [standalone]
+**ensure [voice]
+**ensure [defaultmaps]
+**ensure [maps]
+**ensure [weaponmods]
 
 
 
