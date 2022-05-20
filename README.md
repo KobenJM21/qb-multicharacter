@@ -1,6 +1,6 @@
 ## Fix (Screenshot)
-Make sure server.cfg is set up like this
-(example)
+**Make sure server.cfg is set up like this
+**(example)
 ![server.cfg](https://i.imgur.com/OxIK2Sp.png)
 
 
