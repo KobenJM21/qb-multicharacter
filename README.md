@@ -1,7 +1,7 @@
 ## Fix (Screenshot)
 Make sure server.cfg is set up like this
 (example)
-![server.cfg](https://imgur.com/OxIK2Sp)
+![server.cfg](https://i.imgur.com/OxIK2Sp.png)
 
 
 
